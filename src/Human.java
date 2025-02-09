@@ -1,15 +1,15 @@
-public class Elf {
-    private String name;
-    private int health;
-    private int attackPower;
-    private int levelElf;
-    private boolean intoBattle;
+public class Human {
+    private String name; // Имя
+    private int health; // НР
+    private int attackPower; // Атака
+    private int levelHuman; // Уровень
+    private boolean intoBattle; //true или false
 
-    public Elf() {
-        name = "Эльф";
+    public Human() {
+        name = "Человек";
         health = 100;
         attackPower = 15;
-        levelElf = 1;
+        levelHuman = 1;
         intoBattle = false;
     }
 
@@ -20,14 +20,6 @@ public class Elf {
 
     public boolean isIntoBattle() {
         return intoBattle;
-    }
-
-    public int getLevelElf() {
-        return levelElf;
-    }
-
-    public void setLevelElf(int levelElf) {
-        this.levelElf = levelElf;
     }
 
     public String getName() {
@@ -52,5 +44,13 @@ public class Elf {
 
     public void setAttackPower(int attackPower) {
         this.attackPower = attackPower;
+    }
+
+    public int getLevelHuman() {
+        return levelHuman;
+    }
+
+    public void setLevelHuman(int levelHuman) {
+        this.levelHuman = levelHuman;
     }
 }
